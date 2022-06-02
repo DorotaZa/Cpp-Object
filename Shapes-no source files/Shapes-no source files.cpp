@@ -34,26 +34,35 @@ class Triangle {
     int a = 0;
     int b = 0;
     int c = 0;
-    int h = 0;
 
 public:
 
-    void setDimTr(int x, int y, int z, int  w)
+    void setDimTr(int x, int y, int z)
     {
         a = x;
         b = y,
-            c = z;
-        h = w;
+        c = z;
     }
 
     int perimeterTr()
     {
-        return (a + b + c);
+        int per = 0;
+        if ((a + b) > c && (b + c) > a && (a + c) > b)
+            {
+               per = a+b+c;
+            }
+        return per;
     }
 
-    int areaTr()
+    double areaTr()
     {
-        return (a * h) / 2;
+        double s = (a + b + c) / 2;
+        double area = 0;
+        if ((a + b) > c && (b + c) > a && (a + c) > b)
+        {
+            area = sqrt(s * (s - a) * (s - b) * (s - c));
+        }
+        return area;
     }
 };
 
@@ -70,6 +79,7 @@ public:
 
     int circumference(int r)
     {
+       
         return (2 * pi * r);
     }
 
@@ -104,7 +114,7 @@ int main()
     std::cout << std::endl;
 
     Triangle objTr;
-    objTr.setDimTr(3, 4, 5, 2);
+    objTr.setDimTr(3, 4, 5);
     objTr.perimeterTr();
     objTr.areaTr();
     std::cout << "Perimeter of the triangle = " << objTr.perimeterTr() << std::endl;
