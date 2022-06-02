@@ -1,0 +1,5 @@
+﻿  Student.cpp
+C:\C++-SDA\Cpp -Object-do cwiczen\Student\Student.cpp(22,16): error C3863: array type 'double [5]' is not assignable
+C:\C++-SDA\Cpp -Object-do cwiczen\Student\Student.cpp(30,20): error C2065: 'gradeArr': undeclared identifier
+C:\C++-SDA\Cpp -Object-do cwiczen\Student\Student.cpp(46,27): error C2039: 'name': is not a member of 'Student'
+C:\C++-SDA\Cpp -Object-do cwiczen\Student\Student.cpp(11): message : see declaration of 'Student'
