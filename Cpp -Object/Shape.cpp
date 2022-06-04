@@ -1,5 +1,5 @@
 #include "Shape.hpp"
-#include <corecrt_math_defines.h>
+#include <iostream>
 
 void Rectangle::setDimensions(int x, int y)
 {
@@ -14,46 +14,53 @@ int Rectangle::getField()
 
 int Rectangle::getCircuit()
 {
-    return (2*a) + (2*b);
+    return (2 * a) + (2 * b);
 }
 
 
-void setDimentions(int rad)
+void Circle::setDimensions(int rad)
 {
     r = rad;
 }
 
-int Circle::getField()
+double Circle::getField()
 {
     return pi * r * r;
 }
 
-int Circle::getCircuit()
+double Circle::getCircuit()
 {
     return (2 * pi * r);
 }
 
 
+void Triangle::setDimensions(int x, int y, int z)
+{
+    a = x;
+    b = y;
+    c = z;
+}
 
+double Triangle::getField()
+{
+    int per = 0;
 
+    if ((a + b) > c && (b + c) > a && (a + c) > b)
+    {
+        per = a + b + c;
+    }
+   
+    return per;
+}
 
+double Triangle::getCircuit()
+{
+    double s = (a + b + c) / 2;
+    double area = 0;
 
-
-//void Triangle::setDimensions(int x, int y, int z, int h) 
-//{
-//    a = x;
-//    b = y;
-//    c = z;
-//    d = h; 
-//}
-//
-//int Triangle::getField() //naiwnie mega bez warunkow mat. ale zmienie, bo wstyd
-//{
-//    return a * d ;
-//}
-//
-//int Triangle::getCircuit()
-//{
-//    return a + b + c;
-//}
-
+    if ((a + b) > c && (b + c) > a && (a + c) > b)
+    {
+        area = sqrt(s * (s - a) * (s - b) * (s - c));
+    }
+    return area;
+}

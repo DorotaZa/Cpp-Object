@@ -1,8 +1,8 @@
 ﻿  Account.cpp
   MyClass.cpp
   Shape.cpp
-C:\C++-SDA\Cpp -Object-do cwiczen\Cpp -Object\Shape.hpp(26,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
-C:\C++-SDA\Cpp -Object-do cwiczen\Cpp -Object\Shape.cpp(23,5): error C2065: 'r': undeclared identifier
+C:\C++-SDA\Cpp -Object\Cpp -Object\Shape.hpp(26,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   main.cpp
-C:\C++-SDA\Cpp -Object-do cwiczen\Cpp -Object\Shape.hpp(26,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\C++-SDA\Cpp -Object\Cpp -Object\Shape.hpp(26,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
   Generating Code...
+  Cpp -Object.vcxproj -> C:\C++-SDA\Cpp -Object\x64\Debug\Cpp -Object.exe

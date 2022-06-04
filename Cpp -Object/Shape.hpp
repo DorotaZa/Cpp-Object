@@ -1,5 +1,6 @@
 #pragma once
-#include <corecrt_math_defines.h>
+#define _USE_MATH_DEFINES
+#include <math.h>
 
 
 class Rectangle
@@ -11,15 +12,14 @@ public:
 	int getCircuit();
 };
 
-
-//class Triangle
-//{
-//	int a = 0, b = 0; c = 0; d = 0;
-//public:
-//	void setDimensions(int x, int y, int z, int h);
-//	int getField();
-//	int getCircuit();
-//};
+class Triangle
+{
+	int a = 0, b = 0, c = 0;
+public:
+	void setDimensions(int x, int y, int z);
+	double getField();
+	double getCircuit();
+};
 
 class Circle
 {
@@ -27,7 +27,7 @@ class Circle
 	int r = 0;
 public:
 	void setDimensions(int rad);
-	int getField();
-	int getCircuit();
+	double getField();
+	double getCircuit();
 
 };

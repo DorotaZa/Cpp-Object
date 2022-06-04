@@ -37,6 +37,13 @@ class Triangle {
 
 public:
 
+    //Triangle(int a, int b, int c) //konstruktor parametrowy
+    //{
+    //    this->a = a;
+    //    this->b = b;
+    //    this->c = c;
+    //}
+
     void setDimTr(int x, int y, int z)
     {
         a = x;
