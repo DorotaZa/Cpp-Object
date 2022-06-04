@@ -45,12 +45,12 @@ int main() {
 	std::cout << circle.getField() << "; " << circle.getCircuit() << std::endl;
 	std::cout << std::endl;
 
-	//Account prv;
-	//prv.deposit(150);
-	//std::cout << prv.GetBalance() << std::endl;
-	//int cash = prv.withdraw(100);
-	//std::cout << prv.GetBalance() << std::endl;
-	//cash = prv.withdraw(100);
-	//std::cout << prv.GetBalance() << " " << std::endl;
+	Account prv;
+	prv.deposit(150);
+	std::cout << prv.getbalance() << std::endl;
+	int cash = prv.withdraw(100);
+	std::cout << prv.getbalance() << std::endl;2
+	cash = prv.withdraw(100);
+	std::cout << prv.getbalance() << " " << std::endl;
 
 }
